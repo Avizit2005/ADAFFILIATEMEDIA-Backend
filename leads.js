@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Lead = require("../models/Lead");
-const auth = require("../middleware/auth");
+const Lead = require("./Lead");
+const auth = require("./authmw");
 
 // All leads (admin)
 router.get("/", auth.adminOnly, async (req, res) => {

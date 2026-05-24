@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Worker = require("../models/Worker");
-const Lead = require("../models/Lead");
+const Worker = require("./Worker");
+const Lead = require("./Lead");
 
 const OFFER_PAYOUTS = { "1":1.0,"2":1.3,"3":15.0,"4":30.0,"5":1.0,"6":1.3,"7":3.0 };
 const OFFER_NAMES   = { "1":"Rent To Own Gateway","2":"Rent2Own","3":"CreditScoreIQ","4":"TransUnion","5":"Amazon Gift Card","6":"Cash App Gift Card","7":"FlexJobs" };

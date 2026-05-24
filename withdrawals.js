@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const Withdrawal = require("../models/Withdrawal");
-const Worker = require("../models/Worker");
-const auth = require("../middleware/auth");
+const Withdrawal = require("./Withdrawal");
+const Worker = require("./Worker");
+const auth = require("./authmw");
 
 const MIN_WITHDRAW = 50;
 

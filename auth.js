@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
-const Worker = require("../models/Worker");
+const Worker = require("./Worker");
 
 const sign = (payload) => jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "7d" });
 

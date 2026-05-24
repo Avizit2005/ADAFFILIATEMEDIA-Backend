@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Worker = require("../models/Worker");
-const auth = require("../middleware/auth");
+const Worker = require("./Worker");
+const auth = require("./authmw");
 
 // Get all workers (admin)
 router.get("/", auth.adminOnly, async (req, res) => {

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const auth = require("../middleware/auth");
+const auth = require("./authmw");
 
 const OFFERS = [
   { id: "1", name: "Rent To Own Gateway",              payout: 1.0,  link: "https://getownrenthomeus.netlify.app/",   category: "CPA", status: "active" },

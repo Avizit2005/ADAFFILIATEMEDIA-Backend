@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const WorkerOfferLink = require("../models/WorkerOfferLink");
-const auth = require("../middleware/auth");
+const WorkerOfferLink = require("./WorkerOfferLink");
+const auth = require("./authmw");
 
 // Admin: set/update custom link for a worker+offer
 router.post("/", auth.adminOnly, async (req, res) => {
